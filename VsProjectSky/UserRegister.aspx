@@ -51,16 +51,18 @@ $(document).ready(function() {
 
 
 	<!-- ========================= SECTION CONTENT ========================= -->
+		
 			
-
 	<section class="section-content padding-y">
+
+		<p class="text-center"><asp:Label ID="msgLabel" runat="server" ></asp:Label> </p>
 
 		<!-- ============================ COMPONENT REGISTER   ================================= -->
 		<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
 			<article class="card-body">
 				<header class="mb-4">
+					
 					<h4 class="card-title">Sign up</h4>
-					<asp:Label ID="Label1" runat="server" Text="hello i am here"></asp:Label>
 				</header>
 				<form>
 					<div class="form-row">

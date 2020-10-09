@@ -20,6 +20,7 @@ namespace VsProjectSky
 
         protected void Register_Click(object sender, EventArgs e)
         {
+           
 
             if (isFormvalid())
             {
@@ -30,11 +31,12 @@ namespace VsProjectSky
                 SqlCommand cmd = new SqlCommand(qry, con); //send query execution
 
                 cmd.Parameters.AddWithValue("@t8", username.Value);
-                cmd.Parameters.AddWithValue("@t1", Fname.Value);// passing parameters to the query
+                cmd.Parameters.AddWithValue("@t1", Fname.Value); // passing parameters to the query
                 cmd.Parameters.AddWithValue("@t2", Lname.Value);
                 cmd.Parameters.AddWithValue("@t3", pass.Value);
                 cmd.Parameters.AddWithValue("@t4", address.Value);
                 string sx;
+                
                 if (RadioButton1.Checked)
                 {
                     sx = "male";
@@ -46,6 +48,7 @@ namespace VsProjectSky
 
                 cmd.Parameters.AddWithValue("@t5", sx);
                 cmd.Parameters.AddWithValue("@t6", email.Value);
+                
 
 
                 int i = cmd.ExecuteNonQuery(); //Execute sql query
@@ -60,11 +63,15 @@ namespace VsProjectSky
                 }
                 clear();
                 con.Close();
+                msgLabel.Text = "Registration Succesfully Done";
+                msgLabel.ForeColor = System.Drawing.Color.Green;
+                
 
             }
             else
             {
-                Response.Write("<script> alert('Registration Failed'); </script>");
+                msgLabel.Text = "Registration Failed";
+                msgLabel.ForeColor = System.Drawing.Color.Red;
             }
 
         }
