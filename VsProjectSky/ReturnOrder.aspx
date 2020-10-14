@@ -58,7 +58,7 @@
                                 <div class="form-group">
 
 
-                                    <asp:Button ID="COrder" runat="server" Text="Return" class="btn btn-primary btn-block mt-4" />
+                                    <asp:Button ID="COrder" runat="server" Text="Return" class="btn btn-primary btn-block mt-4" OnClick="COrder_Click" />
                                 </div>
                                 <!-- form-group// -->
                             </form>

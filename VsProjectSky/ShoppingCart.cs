@@ -11,9 +11,16 @@ namespace VsProjectSky
 {
     public class ShoppingCart
     {
+        
 
         public void addToCart(int pid,  string pnm, int cid, int pr, int qt, string pdate )
         {
+            if (HttpContext.Current.Session["UserName"] == null)  // To access addtocart button, login needed
+            {
+                HttpContext.Current.Response.Redirect("UserLogin.aspx?url=" + HttpContext.Current.Server.UrlEncode(HttpContext.Current.Request.Url.AbsoluteUri));
+
+            }
+
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
             con.Open();  //open db connection
 

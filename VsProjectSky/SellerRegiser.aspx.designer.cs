@@ -11,7 +11,7 @@ namespace VsProjectSky
 {
 
 
-    public partial class PaymentDesign
+    public partial class SellerRegiser
     {
 
         /// <summary>
@@ -24,111 +24,93 @@ namespace VsProjectSky
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Label3 control.
+        /// msgLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label msgLabel;
 
         /// <summary>
-        /// TextBox6 control.
+        /// CatLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.Label CatLabel;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// SName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText SName;
 
         /// <summary>
-        /// DropDownList2 control.
+        /// SEmailID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText SEmailID;
 
         /// <summary>
-        /// txtPrice control.
+        /// SUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText SUsername;
 
         /// <summary>
-        /// txtSellingPrice control.
+        /// SAddrs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSellingPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText SAddrs;
 
         /// <summary>
-        /// DropDownListBrand control.
+        /// SPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListBrand;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword SPass;
 
         /// <summary>
-        /// DropDownListcategory control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListcategory;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Text1 control.
+        /// CPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword CPass;
 
         /// <summary>
-        /// Text2 control.
+        /// SRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text2;
-
-        /// <summary>
-        /// Text3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text3;
-
-        /// <summary>
-        /// addProduct1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addProduct1;
+        protected global::System.Web.UI.WebControls.Button SRegister;
     }
 }

@@ -1,50 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Payment.aspx.cs" Inherits="VsProjectSky.Payment" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MP1.Master" AutoEventWireup="true" CodeBehind="Payment.aspx.cs" Inherits="VsProjectSky.Payment" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta charset="utf-8">
-<meta http-equiv="pragma" content="no-cache" />
-<meta http-equiv="cache-control" content="max-age=604800" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<title>Sky Shop</title>
-
-<!-- jQuery -->
-<script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
-
-<!-- Bootstrap4 files-->
-<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-
-<!-- Font awesome 5 -->
-<link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
-
-<!-- custom style -->
-<link href="css/ui.css" rel="stylesheet" type="text/css"/>
-<link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
-
-<!-- custom javascript -->
-<script src="js/script.js" type="text/javascript"></script>
-
-
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-            height: 317px;
-        }
-        .auto-style2 {
-            width: 375px;
-        }
-        .auto-style3 {
-            width: 244px;
-        }
-    </style>
-
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   <form id="form1" runat="server">
 
         <div>
             <section class="section-content padding-y">
@@ -198,5 +157,4 @@
 
        
     </form>
-</body>
-</html>
+</asp:Content>

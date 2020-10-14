@@ -11,7 +11,7 @@ namespace VsProjectSky
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = Session["ono"].ToString();
+            
         }
     }
 }

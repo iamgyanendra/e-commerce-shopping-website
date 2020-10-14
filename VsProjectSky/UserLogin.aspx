@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustomerLogin.aspx.cs" Inherits="VsProjectSky.CustomerLogin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserLogin.aspx.cs" Inherits="VsProjectSky.CustomerLogin" %>
 
 <!DOCTYPE html>
 

@@ -95,8 +95,12 @@
     <Content Include="css\ui7839.css" />
     <Content Include="css\uic619.css" />
     <Content Include="css\userPage.css" />
-    <Content Include="CustomerLogin.aspx" />
+    <Content Include="M2test.aspx" />
+    <Content Include="SellerLogin.aspx" />
+    <Content Include="SellerRegiser.aspx" />
+    <Content Include="UserLogin.aspx" />
     <Content Include="CustomerManage.aspx" />
+    <Content Include="demompChild.aspx" />
     <Content Include="Feedback.aspx" />
     <Content Include="fonts\fontawesome\css\all.min.css" />
     <Content Include="fonts\fontawesome\webfonts\fa-brands-400.svg" />
@@ -206,14 +210,13 @@
     <Content Include="Order.aspx" />
     <Content Include="OrderManage.aspx" />
     <Content Include="Payment.aspx" />
-    <Content Include="PaymentDesign.aspx" />
     <Content Include="PaymentManage.aspx" />
     <Content Include="plugins\fancybox\fancybox.min.css" />
     <Content Include="plugins\owlcarousel\assets\owl.carousel.css" />
     <Content Include="plugins\owlcarousel\assets\owl.theme.default.css" />
     <Content Include="plugins\owlcarousel\assets\owl.video.play.png" />
     <Content Include="plugins\owlcarousel\owl.carousel.min.js" />
-    <Content Include="Product1.aspx" />
+    <Content Include="Shoes.aspx" />
     <Content Include="ProductManage.aspx" />
     <Content Include="ReturnOrder.aspx" />
     <Content Include="SearchProducts.aspx" />
@@ -226,6 +229,7 @@
     <Content Include="Web.config" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddProduct.aspx.cs">
@@ -251,7 +255,6 @@
     </Compile>
     <Compile Include="Badminton.aspx.cs">
       <DependentUpon>Badminton.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Badminton.aspx.designer.cs">
       <DependentUpon>Badminton.aspx</DependentUpon>
@@ -302,12 +305,40 @@
     <Compile Include="Cricket.aspx.designer.cs">
       <DependentUpon>Cricket.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CustomerLogin.aspx.cs">
-      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+    <Compile Include="M2test.aspx.cs">
+      <DependentUpon>M2test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CustomerLogin.aspx.designer.cs">
-      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+    <Compile Include="M2test.aspx.designer.cs">
+      <DependentUpon>M2test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MP2.Master.cs">
+      <DependentUpon>MP2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MP2.Master.designer.cs">
+      <DependentUpon>MP2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SellerLogin.aspx.cs">
+      <DependentUpon>SellerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerLogin.aspx.designer.cs">
+      <DependentUpon>SellerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SellerRegiser.aspx.cs">
+      <DependentUpon>SellerRegiser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SellerRegiser.aspx.designer.cs">
+      <DependentUpon>SellerRegiser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomerManage.aspx.cs">
       <DependentUpon>CustomerManage.aspx</DependentUpon>
@@ -315,6 +346,13 @@
     </Compile>
     <Compile Include="CustomerManage.aspx.designer.cs">
       <DependentUpon>CustomerManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demompChild.aspx.cs">
+      <DependentUpon>demompChild.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demompChild.aspx.designer.cs">
+      <DependentUpon>demompChild.aspx</DependentUpon>
     </Compile>
     <Compile Include="Feedback.aspx.cs">
       <DependentUpon>Feedback.aspx</DependentUpon>
@@ -358,6 +396,13 @@
     <Compile Include="MasterPage1.Master.designer.cs">
       <DependentUpon>MasterPage1.Master</DependentUpon>
     </Compile>
+    <Compile Include="MP1.Master.cs">
+      <DependentUpon>MP1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MP1.Master.designer.cs">
+      <DependentUpon>MP1.Master</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
@@ -380,13 +425,6 @@
     <Compile Include="Payment.aspx.designer.cs">
       <DependentUpon>Payment.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PaymentDesign.aspx.cs">
-      <DependentUpon>PaymentDesign.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PaymentDesign.aspx.designer.cs">
-      <DependentUpon>PaymentDesign.aspx</DependentUpon>
-    </Compile>
     <Compile Include="PaymentManage.aspx.cs">
       <DependentUpon>PaymentManage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -394,12 +432,12 @@
     <Compile Include="PaymentManage.aspx.designer.cs">
       <DependentUpon>PaymentManage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product1.aspx.cs">
-      <DependentUpon>Product1.aspx</DependentUpon>
+    <Compile Include="Shoes.aspx.cs">
+      <DependentUpon>Shoes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Product1.aspx.designer.cs">
-      <DependentUpon>Product1.aspx</DependentUpon>
+    <Compile Include="Shoes.aspx.designer.cs">
+      <DependentUpon>Shoes.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductManage.aspx.cs">
       <DependentUpon>ProductManage.aspx</DependentUpon>
@@ -480,6 +518,13 @@
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\banners\newBan1.webp" />
@@ -497,6 +542,8 @@
     <Content Include="fonts\fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fonts\fontawesome\webfonts\fa-solid-900d41d.eot" />
     <Content Include="MasterPage1.Master" />
+    <Content Include="MP1.Master" />
+    <Content Include="MP2.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

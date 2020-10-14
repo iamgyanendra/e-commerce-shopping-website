@@ -14,7 +14,11 @@ namespace VsProjectSky
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserName"] == null)  // To access this page, login needed
+            {
+                Response.Redirect("UserLogin.aspx?url=" + Server.UrlEncode(Request.Url.AbsoluteUri));
 
+            }
         }
 
         protected void ChangePass_Click(object sender, EventArgs e)

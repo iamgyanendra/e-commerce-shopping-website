@@ -55,11 +55,11 @@ namespace VsProjectSky
                 if (i == 1)
                 {
                     Response.Write("<script> alert('Registration succesfull'); </script>");
-
+                    Response.Redirect("UserLogin.aspx");
                 }
                 else
                 {
-                    Response.Write("<script> alert('Registration succesfull'); </script>");
+                    Response.Write("<script> alert('Registration not succesfull'); </script>");
                 }
                 clear();
                 con.Close();

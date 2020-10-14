@@ -1,38 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Gym.aspx.cs" Inherits="VsProjectSky.Gym" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MP1.Master" AutoEventWireup="true" CodeBehind="Gym.aspx.cs" Inherits="VsProjectSky.Gym" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-
-		<meta charset="utf-8">
-	<meta http-equiv="pragma" content="no-cache" />
-	<meta http-equiv="cache-control" content="max-age=604800" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<title>Sky Shop</title>
-
-	<!-- jQuery -->
-	<script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
-
-	<!-- Bootstrap4 files-->
-	<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-
-	<!-- Font awesome 5 -->
-	<link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
-
-
-	<link href="css/ui.css" rel="stylesheet" type="text/css" />
-	<link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
-
-
-	
-
-	
-
-</head>
-<body>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
         <div>
 
@@ -88,7 +58,7 @@
 
                                     <figure class="card card-product-grid">
                                         <div class="img-wrap">
-                                            <span class="badge badge-danger"> </span>
+                                            <span class="badge badge-danger"></span>
 
                                             <asp:ImageButton ID="Image2" runat="server" Style="height: 150px" src="images/ProductImage/gym2.jpeg" OnClick="Image2_Click" />
 
@@ -177,7 +147,7 @@
                                 <div class="col-md-4">
                                     <figure class="card card-product-grid">
                                         <div class="img-wrap">
-                                            <span class="badge badge-danger"> </span>
+                                            <span class="badge badge-danger"></span>
 
 
                                             <asp:ImageButton ID="ImageButton5" runat="server" Style="height: 150px" src="/images/ProductImage/gym5.jpeg" OnClick="ImageButton5_Click" />
@@ -208,7 +178,7 @@
                                 <div class="col-md-4">
                                     <figure class="card card-product-grid">
                                         <div class="img-wrap">
-                                            <span class="badge badge-danger"> </span>
+                                            <span class="badge badge-danger"></span>
 
                                             <asp:ImageButton ID="ImageButton6" runat="server" Style="height: 150px" src="/images/ProductImage/gym6.jpeg" OnClick="ImageButton6_Click" />
 
@@ -273,5 +243,4 @@
             </footer>
         </div>
     </form>
-</body>
-</html>
+</asp:Content>

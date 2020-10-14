@@ -15,6 +15,14 @@ namespace VsProjectSky
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Session["UserName"] == null)  // To access this page, login needed
+            {
+                Response.Redirect("UserLogin.aspx?url=" + Server.UrlEncode(Request.Url.AbsoluteUri));
+
+            }
+
+
+
             Label1.Visible = false;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
             con.Open();  //open db connection

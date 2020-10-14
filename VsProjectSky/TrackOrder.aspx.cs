@@ -15,20 +15,30 @@ namespace VsProjectSky
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserName"] == null)  // To access this page, login needed
+            {
+                Response.Redirect("UserLogin.aspx?url=" + Server.UrlEncode(Request.Url.AbsoluteUri));
 
+            }
         }
 
         protected void TOrder_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
             con.Open();  //open db connection
-
-            string qry2 = "Select status from Orderdetails where orderNo=@t1"; //Sql Query
-            SqlCommand cmd2 = new SqlCommand(qry2, con); //send query execution
-            cmd2.Parameters.AddWithValue("@t1", TextBox1.Text);
-            SqlDataReader dr2 = cmd2.ExecuteReader();
-            dr2.Read();
-            Label1.Text = dr2[0].ToString();
+            try
+            {
+                string qry2 = "Select status from Orderdetails where orderNo=@t1"; //Sql Query
+                SqlCommand cmd2 = new SqlCommand(qry2, con); //send query execution
+                cmd2.Parameters.AddWithValue("@t1", TextBox1.Text);
+                SqlDataReader dr2 = cmd2.ExecuteReader();
+                dr2.Read();
+                Label1.Text = dr2[0].ToString();
+            }
+            catch (SqlException ex)
+            {
+                Response.Write(ex);
+            }
         }
     }
 }

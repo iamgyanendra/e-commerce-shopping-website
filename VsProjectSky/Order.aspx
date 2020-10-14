@@ -1,22 +1,39 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Order.aspx.cs" Inherits="VsProjectSky.Order" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MP1.Master" AutoEventWireup="true" CodeBehind="Order.aspx.cs" Inherits="VsProjectSky.Order" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            Thankyu For Shopping With Us<br />
-            <br />
-            Your order has been successfully Placed
-            <br />
-            <br />
-            Your Order No. :&nbsp;&nbsp;
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   <form id="form1" runat="server">
+        
+       <div>
+            <section class="section-conten padding-y" style="min-height: 84vh">
+                <div class="card mx-auto border-0" style="max-width: 600px; margin-top: 100px;">
+                    <div class="card-body" style="background-color: #fff">
+                        <asp:Label ID="CatLabel" runat="server" Text=""></asp:Label>
+                        
+                        <div class="text-success">
+
+                            <h2>Thankyou for shopping with us</h2>
+                            <h3>Your order has been successfully Placed</h3>
+                            <h5 class="d-inline">Your Order Number is:</h5><h5 class="d-inline text-gray-light"> <asp:Label ID="Label1" runat="server" Text="103"></asp:Label></h5>
+                               
+
+                            
+                        </div>
+                    </div>
+                    <!-- form-group// -->
+                </div>
+                <br />
+                <br />
+                 <p class="text-center mt-4">Want to buy more? <a href="Home.aspx">Home</a></p>
+
+            </section>
+
+
+
+
+
         </div>
     </form>
-</body>
-</html>
+</asp:Content>

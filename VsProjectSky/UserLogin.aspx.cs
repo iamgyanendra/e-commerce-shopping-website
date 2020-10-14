@@ -32,8 +32,16 @@ namespace VsProjectSky
             {
                 Session["cid"] = dr[0].ToString();
                 Session["UserName"] = username.Value; // Global variable of username to use anyware
-                Response.Redirect("Home.aspx"); //open home page
-
+                
+                string ReturnUrl = Convert.ToString(Request.QueryString["url"]); // clicked page will open after login
+                if (ReturnUrl!=null)
+                {
+                    Response.Redirect(ReturnUrl);
+                }
+                else
+                {
+                    Response.Redirect("Home.aspx");
+                }
 
             }
             else //if unmatched

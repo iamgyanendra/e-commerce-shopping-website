@@ -46,17 +46,18 @@
 
 
                                 <div>
-                                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+
+                                    <asp:Label ID="Label1" runat="server" Text="" ForeColor="Red"></asp:Label>
                                 </div>
 
                                 <div class="form-group">
 
 
-                                    <asp:Button ID="COrder" runat="server" Text="Cancel Now" class="btn btn-primary btn-block mt-4" />
+                                    <asp:Button ID="COrder" runat="server" Text="Cancel Now" class="btn btn-primary btn-block mt-4" OnClick="COrder_Click" />
                                 </div>
                                 <!-- form-group// -->
                             </form>
-                            <p class="text-center mt-5">Go to <a href="#">Home</a></p>
+                            <p class="text-center mt-5">Go to <a href="Home.aspx">Home</a></p>
                         </div>
 
                     </div>

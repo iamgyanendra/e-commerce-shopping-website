@@ -46,7 +46,8 @@
             
 
             <div>
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Your Order Status is: "></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="" ForeColor="Green"></asp:Label>
             </div>
 
             <div class="form-group">
