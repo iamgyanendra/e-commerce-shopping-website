@@ -60,7 +60,7 @@
              <asp:Button ID="Login1" runat="server" Text="Login" class="btn btn-primary btn-block mt-4" OnClick="Login1_Click"/>
             </div> <!-- form-group// -->
           </form>
-          <p class="text-center mt-5">Don't have account? <a href="#">Sign up</a></p>
+          <p class="text-center mt-5">Don't have account? <a href="UserRegister.aspx">Sign up</a></p>
         </div>
         <div class="col-md-8 banner-sec">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

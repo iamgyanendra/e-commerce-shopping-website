@@ -1,49 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserDetails.aspx.cs" Inherits="VsProjectSky.UserDetails" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MP1.Master" AutoEventWireup="true" CodeBehind="UserDetails.aspx.cs" Inherits="VsProjectSky.UserDetails" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta charset="utf-8">
-<meta http-equiv="pragma" content="no-cache" />
-<meta http-equiv="cache-control" content="max-age=604800" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<title>Sky Shop</title>
-
-<!-- jQuery -->
-<script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
-
-<!-- Bootstrap4 files-->
-<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-
-<!-- Font awesome 5 -->
-<link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
-
-<!-- custom style -->
-<link href="css/ui.css" rel="stylesheet" type="text/css"/>
-<link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
-    <link href="css/userPage.css" rel="stylesheet" type="text/css" />
-
-<!-- custom javascript -->
-<script src="js/script.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-/// some script
-
-// jquery ready start
-$(document).ready(function() {
-	// jQuery code
-
-}); 
-// jquery end
-</script>
-
-    
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <link href="css/userPage.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   <form id="form1" runat="server">
         <div class="container emp-profile">
             <form method="post">
                 <div class="row">
@@ -69,6 +30,10 @@ $(document).ready(function() {
 
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-md-2">
+                        
+                        <asp:Button ID="Logout" runat="server" Text="Logout" class="profile-edit-btn" OnClick="Logout_Click" />
                     </div>
 
                 </div>
@@ -140,5 +105,4 @@ $(document).ready(function() {
             </form>
         </div>
     </form>
-</body>
-</html>
+</asp:Content>

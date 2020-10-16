@@ -115,7 +115,7 @@
                     <!-- card-body.// -->
                 </div>
                 <!-- card .// -->
-                <p class="text-center mt-4">Have an account? <a href="#">Log In</a></p>
+                <p class="text-center mt-4">Have an account? <a href="UserLogin.aspx">Log In</a></p>
                 <br>
                 <br>
                 <!-- ============================ COMPONENT REGISTER  END.// ================================= -->

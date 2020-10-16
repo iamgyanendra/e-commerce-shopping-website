@@ -52,5 +52,12 @@ namespace VsProjectSky
                 connect();
             }
         }
+
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Session.Clear();
+            Response.Redirect("Home.aspx");
+        }
     }
 }

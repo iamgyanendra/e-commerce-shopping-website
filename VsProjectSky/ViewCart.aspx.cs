@@ -12,6 +12,28 @@ namespace VsProjectSky
 {
     public partial class ViewCart : System.Web.UI.Page
     {
+
+        public void connect()
+        {
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
+            con.Open();  //open db connection
+
+            string qry = "select * from TempCart"; //SQL Query
+
+            SqlCommand cmd = new SqlCommand(qry, con); //send query execution
+
+
+            SqlDataReader dr = cmd.ExecuteReader(); //Execute sql query
+            if (dr.HasRows)
+            {
+
+                GridView1.DataSource = dr;
+                GridView1.DataBind();
+
+            }
+
+
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,15 +45,15 @@ namespace VsProjectSky
 
 
 
+
             Label1.Visible = false;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
             con.Open();  //open db connection
 
-            string qry = "select * from TempCart where CustID=@t1 and PurDate=@t2"; //Sql Query
+            string qry = "select * from TempCart where CustID=@t1"; //Sql Query
 
             SqlCommand cmd = new SqlCommand(qry, con); //send query execution
             cmd.Parameters.AddWithValue("@t1", Session["cid"].ToString());
-            cmd.Parameters.AddWithValue("@t2", System.DateTime.Now.ToShortDateString());
 
             SqlDataReader dr = cmd.ExecuteReader(); //Execute sql query
             if (dr.HasRows)
@@ -48,20 +70,23 @@ namespace VsProjectSky
                 Label1.Text = "Your Cart Is Empty";
             
             }
-            dr.Close();
+                dr.Close();
 
-            string qry1 = "select sum(Price*Quty) from TempCart where CustID=@t3 and PurDate=@t4";
+            string qry1 = "select sum(Price*Quty) from TempCart where CustID=@t3";
             SqlCommand cmd1 = new SqlCommand(qry1, con); //send query execution
             cmd1.Parameters.AddWithValue("@t3", Session["cid"].ToString());
-            cmd1.Parameters.AddWithValue("@t4", System.DateTime.Now.ToShortDateString());
 
-            SqlDataReader dr1 = cmd.ExecuteReader(); //Execute sql query
+            SqlDataReader dr1 = cmd1.ExecuteReader(); //Execute sql query
 
             dr1.Read();
-            Label2.Text =dr1[0].ToString();
+                Label2.Text = dr1[0].ToString();
 
+                dr1.Close();
+            
+            con.Close();
         }
 
+           
        
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -72,19 +97,19 @@ namespace VsProjectSky
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            int cid = (int)GridView1.DataKeys[e.RowIndex].Value;
+            
 
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
             con.Open();  //open db connection
-            string qry = "delete from TempCart where CustID=@t1 and PurDate=@t2"; //Sql Query
+            int cid = (int)GridView1.DataKeys[e.RowIndex].Value;
+            string qry = "delete from TempCart where ProdId=@t1"; //Sql Query
 
             SqlCommand cmd = new SqlCommand(qry, con); //send query execution
-            cmd.Parameters.AddWithValue("@t1",Session["cid"].ToString());
-            cmd.Parameters.AddWithValue("@t2", System.DateTime.Now.ToString());
+            cmd.Parameters.AddWithValue("@t1",cid);
             cmd.ExecuteNonQuery();
             con.Close();
             GridView1.EditIndex = -1;
-            
+            connect();
         }
 
        

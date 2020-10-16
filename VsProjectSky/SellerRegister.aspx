@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP1.Master" AutoEventWireup="true" CodeBehind="SellerRegiser.aspx.cs" Inherits="VsProjectSky.SellerRegiser" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP1.Master" AutoEventWireup="true" CodeBehind="SellerRegister.aspx.cs" Inherits="VsProjectSky.SellerRegiser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -49,8 +49,7 @@
                     <!-- form-group// -->
                 </div>
                 <!-- card-body.// -->
-
-                <!-- card .// -->
+                <p class="text-center mt-5">Have an account? <a href="SellerLogin.aspx">Sign in</a></p>
 
             </section>
 

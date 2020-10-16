@@ -79,7 +79,7 @@
 
 
                         <div class="col-1 ml-sm-5 ">
-                            <a href="#" class="badge badge-primary p-2">Sell On Sky Shop</a>
+                            <a href="SellerRegister.aspx" class="badge badge-primary p-2">Sell On Sky Shop</a>
                         </div>
 
                         <div class="col-lg-3 col-sm-4 col-12">
@@ -94,13 +94,17 @@
                                         class="fa fa-shopping-cart"></i></a>
                                     <span class="badge badge-pill badge-danger notify"></span>
                                 </div>
-                                <div class="widget-header icontext">
-                                    <a href="UserDetails.aspx" class="icon icon-sm rounded-circle"><i class="fa fa-user"></i></a>
+                                <div class="widget-header icontext ">
+
+                                          <a href="UserDetails.aspx" class="icon icon-sm rounded-circle"><i class="fa fa-user"></i></a>
+                                    
+
                                     <div class="text">
                                         <span class="text-muted">Welcome!</span>
                                         <div>
-                                            <a href="UserLogin.aspx">Sign in</a> |
-										<a href="UserRegister.aspx">Register</a>
+                                            
+                                            <asp:Label ID="Label1" runat="server" Text="Sign in"></asp:Label>
+                                            <asp:Label ID="Label2" runat="server" Text="Register"></asp:Label>
                                         </div>
                                     </div>
                                 </div>

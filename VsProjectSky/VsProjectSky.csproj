@@ -97,7 +97,7 @@
     <Content Include="css\userPage.css" />
     <Content Include="M2test.aspx" />
     <Content Include="SellerLogin.aspx" />
-    <Content Include="SellerRegiser.aspx" />
+    <Content Include="SellerRegister.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="CustomerManage.aspx" />
     <Content Include="demompChild.aspx" />
@@ -326,12 +326,12 @@
     <Compile Include="SellerLogin.aspx.designer.cs">
       <DependentUpon>SellerLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SellerRegiser.aspx.cs">
-      <DependentUpon>SellerRegiser.aspx</DependentUpon>
+    <Compile Include="SellerRegister.aspx.cs">
+      <DependentUpon>SellerRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SellerRegiser.aspx.designer.cs">
-      <DependentUpon>SellerRegiser.aspx</DependentUpon>
+    <Compile Include="SellerRegister.aspx.designer.cs">
+      <DependentUpon>SellerRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserLogin.aspx.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
