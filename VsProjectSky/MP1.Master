@@ -101,10 +101,11 @@
 
                                     <div class="text">
                                         <span class="text-muted">Welcome!</span>
-                                        <div>
+                                            <asp:Label ID="Label3" runat="server" Font-Bold="True" ForeColor="#3167EB" Visible="False"></asp:Label>
+                                        <div runat="server" id="sire">
+                                            <a href="UserLogin.aspx">Sign in</a> |
+										   <a href="UserRegister.aspx"> Register</a>
                                             
-                                            <asp:Label ID="Label1" runat="server" Text="Sign in"></asp:Label>
-                                            <asp:Label ID="Label2" runat="server" Text="Register"></asp:Label>
                                         </div>
                                     </div>
                                 </div>

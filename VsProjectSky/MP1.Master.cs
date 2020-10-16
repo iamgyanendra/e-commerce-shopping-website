@@ -13,7 +13,10 @@ namespace VsProjectSky
         {
             if (Session["UserName"]!=null)
             {
-
+                sire.Visible = false;
+                Label3.Visible = true;
+                Label3.Text = Session["UserName"].ToString();
+                
             }
         }
 
