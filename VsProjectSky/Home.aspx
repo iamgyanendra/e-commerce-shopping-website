@@ -172,8 +172,8 @@
                 <div class="col-md-2 ">
 
                     <div>
-                        <div href="#" class="card ">
-                            <a href="#" class="img-wrap all-side-Shadow rounded p-2 white">
+                        <div href="" class="card ">
+                            <a href="Tracker.aspx" class="img-wrap all-side-Shadow rounded p-2 white">
                                 <img class="h-100" src="images/items/sideImg1.png">
                             </a>
 
@@ -197,17 +197,17 @@
 
             <div class=" container d-md-flex mt-2 p-0">
                 <div href="#" class="img-wrap col-md-4">
-                    <a href="#">
+                    <a href="Badminton.aspx">
                         <img class="all-side-Shadow rounded " src="/images/posts/post4.png" alt=""></a>
                 </div>
 
-                <div href="#" class="img-wrap col-md-4">
-                    <a href="#">
+                <div href="" class="img-wrap col-md-4">
+                    <a href="Shoes.aspx">
                         <img class="all-side-Shadow rounded" src="/images/posts/post2.png" alt=""></a>
                 </div>
 
-                <div href="#" class=" img-wrap col-md-4">
-                    <a href="#">
+                <div href="" class=" img-wrap col-md-4">
+                    <a href="Gym.aspx">
                         <img class="all-side-Shadow rounded" src="/images/posts/post3.png" alt=""></a>
                 </div>
 
@@ -226,7 +226,7 @@
             <div class="container  all-side-Shadow rounded" style="background-color: #fff;">
 
                 <header class="section-heading pt-2 ">
-                    <a href="#" class="btn btn-primary float-right">See all</a>
+                    <a href="Football.aspx" class="btn btn-primary float-right">See all</a>
                     <h5 class="section-title">Popular products</h5>
                 </header>
                 <!-- sect-heading -->
@@ -345,7 +345,7 @@
             <div class="container  all-side-Shadow rounded" style="background-color: #fff;">
 
                 <header class="section-heading pt-2 ">
-                    <a href="#" class="btn btn-primary float-right">See all</a>
+                    <a href="Shoes.aspx" class="btn btn-primary float-right">See all</a>
                     <h5 class="section-title">Popular products</h5>
                 </header>
                 <!-- sect-heading -->
@@ -468,54 +468,54 @@
                 <div class="row">
                     <div class="col-md-2 col-6">
                         <figure class="box item-logo">
-                            <a href="#">
+                            <a href="Shoes.aspx">
                                 <img src="images/logos/Nikelogo.jpg"></a>
-                            <figcaption class="border-top pt-2">36 Products</figcaption>
+                            <figcaption class="border-top pt-2">24 Products</figcaption>
                         </figure>
                         <!-- item-logo.// -->
                     </div>
                     <!-- col.// -->
                     <div class="col-md-2  col-6">
                         <figure class="box item-logo">
-                            <a href="#">
+                            <a href="Shoes.aspx">
                                 <img src="images/logos/Puma-Logo.png"></a>
-                            <figcaption class="border-top pt-2">980 Products</figcaption>
+                            <figcaption class="border-top pt-2">24 Products</figcaption>
                         </figure>
                         <!-- item-logo.// -->
                     </div>
                     <!-- col.// -->
                     <div class="col-md-2  col-6">
                         <figure class="box item-logo">
-                            <a href="#">
+                            <a href="Tracker.aspx">
                                 <img src="images/logos/Casio-Logo.png"></a>
-                            <figcaption class="border-top pt-2">25 Products</figcaption>
+                            <figcaption class="border-top pt-2">24 Products</figcaption>
                         </figure>
                         <!-- item-logo.// -->
                     </div>
                     <!-- col.// -->
                     <div class="col-md-2  col-6">
                         <figure class="box item-logo">
-                            <a href="#">
+                            <a href="Tracker.aspx">
                                 <img src="images/logos/Fitbit_logo.png"></a>
-                            <figcaption class="border-top pt-2">72 Products</figcaption>
+                            <figcaption class="border-top pt-2">24 Products</figcaption>
                         </figure>
                         <!-- item-logo.// -->
                     </div>
                     <!-- col.// -->
                     <div class="col-md-2  col-6">
                         <figure class="box item-logo">
-                            <a href="#">
+                            <a href="Shoes.aspx">
                                 <img src="images/logos/adidas-logo.png"></a>
-                            <figcaption class="border-top pt-2">41 Products</figcaption>
+                            <figcaption class="border-top pt-2">24 Products</figcaption>
                         </figure>
                         <!-- item-logo.// -->
                     </div>
                     <!-- col.// -->
                     <div class="col-md-2  col-6">
                         <figure class="box item-logo">
-                            <a href="#">
+                            <a href="Gym.aspx">
                                 <img src="images/logos/Alala.png"></a>
-                            <figcaption class="border-top pt-2">12 Products</figcaption>
+                            <figcaption class="border-top pt-2">24 Products</figcaption>
                         </figure>
                         <!-- item-logo.// -->
                     </div>
@@ -529,62 +529,7 @@
 
 
 
-        <!-- ========================= SECTION FEATURE ========================= -->
-        <section class="section-specials padding-y border-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <figure class="itemside">
-                            <div class="aside">
-                                <span class="icon-sm rounded-circle bg-primary">
-                                    <i class="fa fa-money-bill-alt white"></i>
-                                </span>
-                            </div>
-                            <figcaption class="info">
-                                <h6 class="title">Reasonable prices</h6>
-                                <p class="text-muted">Buy any sports items at reasonable price or very low cost and dicounted rate. </p>
-                            </figcaption>
-                        </figure>
-                        <!-- iconbox // -->
-                    </div>
-                    <!-- col // -->
-                    <div class="col-md-4">
-                        <figure class="itemside">
-                            <div class="aside">
-                                <span class="icon-sm rounded-circle bg-danger">
-                                    <i class="fa fa-comment-dots white"></i>
-                                </span>
-                            </div>
-                            <figcaption class="info">
-                                <h6 class="title">Customer support 24/7 </h6>
-                                <p class="text-muted">Sky Shop will provide customer support service 24/7 for any complaint so, buy without hesitation. </p>
-                            </figcaption>
-                        </figure>
-                        <!-- iconbox // -->
-                    </div>
-                    <!-- col // -->
-                    <div class="col-md-4">
-                        <figure class="itemside">
-                            <div class="aside">
-                                <span class="icon-sm rounded-circle bg-success">
-                                    <i class="fa fa-truck white"></i>
-                                </span>
-                            </div>
-                            <figcaption class="info">
-                                <h6 class="title">Quick delivery</h6>
-                                <p class="text-muted">We will try to delevier the goods under two working days.  </p>
-                            </figcaption>
-                        </figure>
-                        <!-- iconbox // -->
-                    </div>
-                    <!-- col // -->
-                </div>
-                <!-- row.// -->
-
-            </div>
-            <!-- container.// -->
-        </section>
-        <!-- ========================= SECTION FEATURE END// ========================= -->
+      
 
     </form>
 </asp:Content>

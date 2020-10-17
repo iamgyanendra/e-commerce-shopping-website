@@ -2,43 +2,46 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/ProductDetails.css" rel="stylesheet" type="text/css" />
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
-        <div>
+        <div >
 
 
-            <div class="container">
-                <div class="card mb-5">
+            <div class="container mt-5" >
+                <div class="card mb-5 border-0 shadow p-5" style="background-color: #ffffff">
                     <div class="container-fliud">
                         <div class="wrapper row">
-                            <div class="preview col-md-6">
+                            <div class="preview col-md-4 mr-5">
 
                                 <div class="preview-pic tab-content">
 
-                                    <asp:Image ID="pdImage1" runat="server" class="tab-pane active" />
+                                    <asp:Image ID="pdImage1" runat="server" class="tab-pane active" Height="430px" Width="420px" />
 
                                 </div>
 
 
                             </div>
-                            <div class="details col-md-6">
-                                <h5 class="">Product ID:
-                                    <asp:Label ID="Label5" runat="server" Text="" /></h5>
+                            <div class="details col-md-6 ml-5">
+     
+                                <h2 class="">
+                                    <asp:Label ID="Label1" runat="server" Text="Product Name" ForeColor="Black"></asp:Label>
+                                </h2>
+                                <h6 class="text-muted">Product code:
+                                    <asp:Label ID="Label5" runat="server"/>
 
-                                <h3 class="">
-                                    <asp:Label ID="Label1" runat="server" Text="Product Name"></asp:Label>
-                                </h3>
-                                <h5 class="">Brand:
-                                    <asp:Label ID="Label2" runat="server" Text="Nike"></asp:Label>
+                                </h6>
 
-                                </h5>
+                                <h6 class="">
+                                    <asp:Label ID="Label2" runat="server" Text="Nike" ForeColor="#666666"></asp:Label>
 
-                                <h5 class="">current price:<asp:Label ID="Label3" runat="server" Text="" /></h5>
-                                <h5 class="">Description : </h5>
+                                </h6>
 
-                                <asp:TextBox ID="TextBox1" runat="server" Height="134px" TextMode="MultiLine" Width="487px"></asp:TextBox>
+                                <h5 class="text-success">₹<asp:Label ID="Label3" runat="server" /></h5>
+                                <h6 class="text-muted">Description</h6>
+
+                                <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True" BackColor="White" BorderColor="White" BorderStyle="None" ForeColor="Silver" Rows="5" TextMode="MultiLine" Font-Strikeout="False" style="resize:none; outline:none" Width="400px"></asp:TextBox>
 
 
 
@@ -46,14 +49,14 @@
                                 <div class="section" style="padding-bottom: 20px;">
                                     <h6 class="title-attr"><small>Quantity</small></h6>
                                     <div>
-                                        <asp:TextBox ID="QuanBox" runat="server" Width="41px">1</asp:TextBox>
+                                        <asp:TextBox ID="QuanBox" runat="server" Width="41px" CssClass="form-control" Rows="1">1</asp:TextBox>
                                     </div>
                                 </div>
 
 
 
                                 <div class="action">
-                                    <asp:Button ID="productDetails" runat="server" Text="Add Product" class="btn btn-primary btn-block" OnClick="productDetails_Click" />
+                                    <asp:Button ID="productDetails" runat="server" Text="Buy Now" class="btn btn-primary " OnClick="productDetails_Click" Width="134px" />
 
                                 </div>
                             </div>

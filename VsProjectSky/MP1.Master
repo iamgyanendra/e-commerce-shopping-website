@@ -44,7 +44,7 @@
     </asp:ContentPlaceHolder>
 
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 
     <div class="MyHeader">
@@ -179,8 +179,8 @@
         </asp:ContentPlaceHolder>
     </div>
 
-    <div >
-        <footer class="section-footer border-top bg" style="background-color: #172337;">
+    
+        <footer class="section-footer border-top mt-auto" style="background-color: #172337;">
             <div class="container">
                 <section class="footer-top  padding-y">
                     <div class="row">
@@ -253,7 +253,7 @@
             </div>
             <!-- //container -->
         </footer>
-    </div>
+    
 
 
 </body>
