@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
         <div>
-            <section class="section-conten padding-y" style="min-height: 84vh">
+            <section class="section-conten padding-y">
 
                 <!-- ============================ COMPONENT Change Password  ================================= -->
                 <div class="card mx-auto" style="max-width: 380px; margin-top: 100px;">

@@ -4,10 +4,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	 <div>
+	 <div style="background-color: white">
 
             <div class="container contact h-100">
-        <div class="row">
+        <div class="row shadow rounded">
             <div class="col-md-3">
                 <div class="contact-info">
                     <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>

@@ -38,7 +38,7 @@
                                         <!-- img-wrap.// -->
                                         <figcaption class="info-wrap">
                                             <div class="fix-height">
-                                                <a href="#" class="title">Product Name and details</a>
+                                                <a href="#" class="title">Puma Sports Shoes</a>
                                                 <div class="price-wrap mt-2">
                                                     <del class="price-old text-danger">₹19800</del>
                                                     <span class="price text-success">&nbsp ₹10000</span>
@@ -231,24 +231,7 @@
                 </div>
                 <!-- container .//  -->
             </section>
-            <!-- ========================= SECTION CONTENT END// ========================= -->
-
-            <!-- ========================= FOOTER ========================= -->
-            <footer class="section-footer border-top padding-y">
-                <div class="container">
-                    <p class="float-md-right">
-                        &copy Copyright 2020 All rights reserved
-                    </p>
-                    <p>
-                        <a href="#">Terms and conditions</a>
-                    </p>
-                </div>
-                <!-- //container -->
-            </footer>
-            <!-- ========================= FOOTER END // ========================= -->
-
-
-
+   
 
         </div>
     </form>

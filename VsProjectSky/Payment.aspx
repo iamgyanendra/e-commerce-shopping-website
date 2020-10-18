@@ -127,7 +127,14 @@
 
                             
 
-
+                            <div>
+                                <td class="auto-style2">&nbsp;</td>
+                                <td class="auto-style3">
+                                    <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </div>
 
                             <div class="form-group">
 
@@ -136,17 +143,8 @@
 
                             </div>
                             <!-- form-group// -->
-                            <div>
-                                <asp:Button ID="btnPrint" runat="server" Text="Print" Width="106px" />
-                            </div>
-                            <tr>
-                                <td class="auto-style2">&nbsp;</td>
-                                <td class="auto-style3">
-                                    <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
+                            
+                            
 
                         </form>
                     </article>

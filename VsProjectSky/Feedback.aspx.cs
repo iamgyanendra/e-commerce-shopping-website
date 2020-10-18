@@ -32,7 +32,7 @@ namespace VsProjectSky
 
                 SmtpClient sm = new SmtpClient("smtp.gmail.com");
                 sm.Port = 587;
-                sm.Credentials = new System.Net.NetworkCredential("prakash9.2020@gmail.com", "mansh9560689237");
+                sm.Credentials = new System.Net.NetworkCredential("prakash9.2020@gmail.com", "Password");
 
                 sm.EnableSsl = true;
                 sm.Send(msg);

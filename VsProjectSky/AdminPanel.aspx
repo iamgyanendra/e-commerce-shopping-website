@@ -7,8 +7,8 @@
     <form id="form1" runat="server">
         <div>
 
-            <section class="section-conten padding-y" style="min-height: 84vh">
-                <div class="card mx-auto" style="max-width: 530px; margin-top: 200px;">
+            <section class="section-conten padding-y">
+                <div class="card mx-auto" style="max-width: 530px; margin-top: 100px;">
                     <div class="card-body" style="background-color: #ecf0f1">
                         <asp:Label ID="CatLabel" runat="server" Text=""></asp:Label>
                         <h4 class="card-title mb-4 text-center">Admin Panel</h4>

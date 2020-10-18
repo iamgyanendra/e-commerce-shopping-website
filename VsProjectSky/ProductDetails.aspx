@@ -34,7 +34,7 @@
                                 </h6>
 
                                 <h6 class="">
-                                    <asp:Label ID="Label2" runat="server" Text="Nike" ForeColor="#666666"></asp:Label>
+                                    <asp:Label ID="Label2" runat="server" Text="Puma" ForeColor="#666666"></asp:Label>
 
                                 </h6>
 

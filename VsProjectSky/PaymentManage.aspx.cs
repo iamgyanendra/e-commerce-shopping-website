@@ -17,7 +17,7 @@ namespace VsProjectSky
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
             con.Open();  //open db connection
 
-            string qry = "select Cardno, Cardtype, validupto, CVV, Cardholder, cardlimit from CardPayment"; //SQL Query
+            string qry = "select Id, Cardno, Cardtype, Cardname, Amount, Date, UserName, Orderno from PaymentDone"; //SQL Query
 
             SqlCommand cmd = new SqlCommand(qry, con); //send query execution
 
@@ -58,7 +58,7 @@ namespace VsProjectSky
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Creat DB Connection
             con.Open(); // Open DB Connection
             int ono = (int)GridView1.DataKeys[e.RowIndex].Value;
-            string qry = "delete from CardPayment where Cardno=@t1";
+            string qry = "delete from PaymentDone where Id=@t1";
             SqlCommand cmd = new SqlCommand(qry, con);
             cmd.Parameters.AddWithValue("@t1", ono);
             cmd.ExecuteNonQuery();
@@ -73,25 +73,31 @@ namespace VsProjectSky
            SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Creat DB Connection
             con.Open(); // Open DB Connection
             int ono = (int)GridView1.DataKeys[e.RowIndex].Value;
-            string qry = "update CardPayment set Cardtype = @t1, validupto = @t2, CVV = @t3, Cardholder = @t4, cardlimit =@t5 where Cardno = @t6";
+            string qry = "update PaymentDone set Cardno=@t1, Cardtype=@t2, Cardname=@t3, Amount=@t4, Date=@t5, UserName=@t6, Orderno=@t7 where Id=@t8";
             SqlCommand cmd = new SqlCommand(qry, con);
-            string Cardtype =
+            string Cardno =
            ((TextBox)GridView1.Rows[e.RowIndex].Cells[2].Controls[0]).Text;
-            string validupto =
+            string Cardtype =
            ((TextBox)GridView1.Rows[e.RowIndex].Cells[3].Controls[0]).Text;
-            string CVV =
+            string Cardname =
            ((TextBox)GridView1.Rows[e.RowIndex].Cells[4].Controls[0]).Text;
-            string Cardholder =
+            string Amount =
            ((TextBox)GridView1.Rows[e.RowIndex].Cells[5].Controls[0]).Text;
-            string cardlimit =
+            string Date =
            ((TextBox)GridView1.Rows[e.RowIndex].Cells[6].Controls[0]).Text;
-            
-            cmd.Parameters.AddWithValue("@t1", Cardtype);
-            cmd.Parameters.AddWithValue("@t2", validupto);
-            cmd.Parameters.AddWithValue("@t3", CVV);
-            cmd.Parameters.AddWithValue("@t4", Cardholder);
-            cmd.Parameters.AddWithValue("@t5", cardlimit);
-            cmd.Parameters.AddWithValue("@t6", ono);
+            string UserName =
+           ((TextBox)GridView1.Rows[e.RowIndex].Cells[7].Controls[0]).Text;
+            string Orderno =
+           ((TextBox)GridView1.Rows[e.RowIndex].Cells[8].Controls[0]).Text;
+
+            cmd.Parameters.AddWithValue("@t1", Cardno);
+            cmd.Parameters.AddWithValue("@t2", Cardtype);
+            cmd.Parameters.AddWithValue("@t3", Cardname);
+            cmd.Parameters.AddWithValue("@t4", Amount);
+            cmd.Parameters.AddWithValue("@t5", Date);
+            cmd.Parameters.AddWithValue("@t6", UserName);
+            cmd.Parameters.AddWithValue("@t7", Orderno);
+            cmd.Parameters.AddWithValue("@t8", ono);
             cmd.ExecuteNonQuery();
             con.Close();
 

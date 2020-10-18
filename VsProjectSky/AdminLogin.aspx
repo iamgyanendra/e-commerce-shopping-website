@@ -5,11 +5,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <form id="form1" runat="server">
         <div>
-            <section class="section-conten padding-y" style="min-height: 84vh">
+            <section class="section-conten padding-y" >
                 <div class="card mx-auto" style="max-width: 380px; margin-top: 100px;">
                     <div class="card-body" style="background-color: #ecf0f1">
                         <asp:Label ID="CatLabel" runat="server" Text=""></asp:Label>
-                        <h4 class="card-title mb-4">Admin Login</h4>
+                        <h4 class="card-title mb-4 text-center">Admin Login</h4>
 
                         <div class="form-group">
                             <input id="User" runat="server" name="" class="form-control" placeholder="User Name" type="text">
@@ -23,8 +23,9 @@
                         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                         <!-- form-group// -->
 
-
+                        <div class="mt-4">
                         <asp:Button ID="ALogin" runat="server" class="btn btn-primary btn-block" Text="Login" OnClick="ALogin_Click" />
+                        </div>
                     </div>
                     <!-- form-group// -->
                 </div>

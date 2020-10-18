@@ -4,52 +4,59 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
         <div>
-            <section class="section-conten padding-y" style="min-height: 84vh">
+            <section class="section-conten padding-y rounded">
 
                 <h4 class="text-center">
                     <asp:Label ID="msgLabel" runat="server"></asp:Label>
                 </h4>
 
-                <div class="card mx-auto all-side-Shadow" style="max-width: 450px; margin-top: 100px;">
+                <div class="card mx-auto shadow " style="max-width: 450px; margin-top: 100px;">
                     <div class="card-body" style="background-color: #fff">
                         <asp:Label ID="CatLabel" runat="server" Text=""></asp:Label>
                         <h4 class="card-title mb-4 text-center">Seller Register</h4>
 
                         <div class="form-group">
-                            <input id="SName" runat="server" name="" class="form-control" placeholder="Full Name" type="text">
+                            <label>Full Name:</label>
+                            <input id="SName" runat="server" name="" class="form-control" placeholder="" type="text">
                         </div>
 
                         <div class="form-group">
-                            <input id="SEmailID" runat="server" name="" class="form-control" placeholder="Email ID" type="text">
+                            <label>Email:</label>
+                            <input id="SEmailID" runat="server" name="" class="form-control" placeholder="" type="text">
                         </div>
 
                         <div class="form-group">
-                            <input id="SUsername" runat="server" name="" class="form-control" placeholder="User Name" type="text">
+                            <label>User Name:</label>
+                            <input id="SUsername" runat="server" name="" class="form-control" placeholder="" type="text">
                         </div>
 
                         <div class="form-group">
-                            <input id="SAddrs" runat="server" name="" class="form-control" placeholder="Address" type="text">
+                            <label>Address:</label>
+                            <input id="SAddrs" runat="server" name="" class="form-control" placeholder="" type="text">
                         </div>
 
                         <!-- form-group// -->
 
                         <div class="form-group">
-                            <input id="SPass" runat="server" name="" class="form-control" placeholder="Password" type="password">
+                            <label>Password:</label>
+                            <input id="SPass" runat="server" name="" class="form-control" placeholder="" type="password">
                         </div>
                         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                         <!-- form-group// -->
 
                         <div class="form-group">
-                            <input id="CPass" runat="server" name="" class="form-control" placeholder="Confirm Password" type="password">
+                            <label>Confirm Password:</label>
+                            <input id="CPass" runat="server" name="" class="form-control" placeholder="" type="password">
                         </div>
 
-
+                        <div class="mt-4 mb-2">
                         <asp:Button ID="SRegister" runat="server" class="btn btn-primary btn-block" Text="Login" OnClick="SRegister_Click"  />
+                            </div>
                     </div>
                     <!-- form-group// -->
                 </div>
                 <!-- card-body.// -->
-                <p class="text-center mt-5">Have an account? <a href="SellerLogin.aspx">Sign in</a></p>
+                <p class="text-center mt-5 mb-5">Have an account? <a href="SellerLogin.aspx">Sign in</a></p>
 
             </section>
 

@@ -140,7 +140,7 @@
                                 <a class="dropdown-item" href="Gym.aspx">Dumbbells</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="Football.aspx">Football</a>
-                                <a class="dropdown-item" href="Tracker.aspx">SmartWatch</a>
+                                <a class="dropdown-item" href="Tracker.aspx">Health Tracker</a>
                                 <a class="dropdown-item" href="Cricket.aspx">Cricket</a>
                             </div>
                         </li>
@@ -160,10 +160,13 @@
                             <a class="nav-link" href="Gym.aspx">Exercise Fitness</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Shoes.aspx">Sport Shoes</a>
+                            <a class="nav-link" href="Shoes.aspx">Sports Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Tracker.aspx">Sport Watch</a>
+                            <a class="nav-link" href="Tracker.aspx">Health Tracker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tshirt.aspx">T-shirt</a>
                         </li>
                     </ul>
                 </div>
@@ -208,8 +211,8 @@
                             <ul class="list-unstyled white">
                                 <li><a href="ContactUs.aspx">Contact us</a></li>
                                 <li><a href="ViewCart.aspx">Cart</a></li>
-                               
-                                <li><a href="Feedback.aspx">F&Q</a></li>
+                                <li><a href="ForgotPassword.aspx">Forgot Password</a></li>
+                              
                             </ul>
                         </aside>
                         <aside class="col-md col-6">
@@ -222,7 +225,7 @@
                             </ul>
                         </aside>
                         <aside class="col-md">
-                            <h6 class="title text-muted">Social</h6>
+                            <h6 class="title text-muted">Other</h6>
                             <ul class="list-unstyled white">
                                 <li><a href="AdminLogin.aspx"></i>Admin Login </a></li>
                                 <li><a href="SellerRegister.aspx"></i>Seller Register </a></li>
