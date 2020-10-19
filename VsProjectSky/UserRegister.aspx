@@ -17,7 +17,7 @@
                     <article class="card-body">
                         <header class="mb-4">
 
-                            <h4 class="card-title">Sign up</h4>
+                            <h4 class="card-title text-center">Sign up</h4>
                         </header>
                         <form>
                             <div class="form-row">
@@ -122,22 +122,8 @@
 
 
             </section>
-            <!-- ========================= SECTION CONTENT END// ========================= -->
 
-
-            <!-- ========================= FOOTER ========================= -->
-            <footer class="section-footer border-top padding-y">
-                <div class="container">
-                    <p class="float-md-right">
-                        &copy Copyright 2019 All rights reserved
-                    </p>
-                    <p>
-                        <a href="#">Terms and conditions</a>
-                    </p>
-                </div>
-                <!-- //container -->
-            </footer>
-            <!-- ========================= FOOTER END // ========================= -->
+           
 
         </div>
     </form>

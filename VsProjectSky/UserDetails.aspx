@@ -5,9 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <form id="form1" runat="server">
-        <div class="container emp-profile">
+        <div class="container emp-profile shadow card">
             <form method="post">
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-4">
                         <div class="profile-img">
                             <img src="https://www.kindpng.com/picc/m/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png" alt="" />
@@ -42,16 +42,17 @@
                         <div class="profile-work">
                             <p>OTHER LINKS</p>
                             <a href="Home.aspx">Home</a><br />
-                            <a href="ViewCart.aspx">Your Cart</a><br />
+                            <a href="ViewCart.aspx">My Cart</a><br />
                             <a href="ChangePassword.aspx">Change Password</a><br />
-                            <a href="ContactUs.aspx">Contact Us</a><br />
-                            <a href="AboutUs.aspx">About Us</a><br />
+                            <a href="TrackOrder.aspx">Track order</a><br />
+                            <a href="CancelOrder.aspx">Cancel order</a><br />
+                            <a href="ReturnOrder.aspx">Return order</a><br />
 
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>User Name</label>
