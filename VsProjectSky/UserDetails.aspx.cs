@@ -55,9 +55,16 @@ namespace VsProjectSky
 
         protected void Logout_Click(object sender, EventArgs e)
         {
-            Session.RemoveAll();
-            Session.Clear();
-            Response.Redirect("Home.aspx");
+            try
+            {
+                Session.RemoveAll();
+                Session.Clear();
+                Response.Redirect("Home.aspx");
+            }
+            catch (SqlException ex)
+            {
+                Response.Write(ex);
+            }
         }
     }
 }

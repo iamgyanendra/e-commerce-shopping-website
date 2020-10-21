@@ -22,21 +22,21 @@ namespace VsProjectSky
             {
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Creat DB Connection
                 con.Open(); // Open DB Connection
-                string qry = "select PId, PName, PSelPrice, PDescription, PImageName from tblProducts where PName = @t1"; //SQL Query
+                string qry = "select PId, PName, PSelPrice, PDescription, PImageName from tblProducts where PName=@t1"; //SQL Query
                 SqlCommand cmd = new SqlCommand(qry, con); //Send Qry
-                cmd.Parameters.AddWithValue("@t1", SearchBox.Text);
-                
+                cmd.Parameters.AddWithValue("@t1", SearchBox.Text.ToString());
+
                 SqlDataReader dr = cmd.ExecuteReader();//Execute Sql
-                
+
                 if (dr.HasRows) //If record matched
                 {
                     GridView1.DataSource = dr;
                     GridView1.DataBind(); //Binding the Grid fields with
-                   
+
                 }
                 else
                 {
-                    
+
                     Label1.Text = "Product Not Found";
                 }
             }

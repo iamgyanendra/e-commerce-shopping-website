@@ -15,7 +15,7 @@ namespace VsProjectSky
 {
     public partial class addProduct : System.Web.UI.Page
     {
-       
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -44,7 +44,7 @@ namespace VsProjectSky
                 ShowCategory();
 
             }
-            
+
         }
 
         private void ShowCategory()
@@ -93,69 +93,75 @@ namespace VsProjectSky
 
         protected void addProduct1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
-            con.Open();  //open db connection
-
-            string qry = "INSERT INTO tblProducts VALUES(@c0,@c1,@c2,@c3,@c4,@c5,@c6,@c7)"; //Sql Query
-            SqlCommand cmd = new SqlCommand(qry, con); //send query execution
-
-            cmd.Parameters.AddWithValue("@c0", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@c1", Product.Value);
-            cmd.Parameters.AddWithValue("@c2", txtPrice.Value);
-            cmd.Parameters.AddWithValue("@c3", txtSellingPrice.Value);
-            cmd.Parameters.AddWithValue("@c4", DropDownListBrand.SelectedItem.Value);
-            cmd.Parameters.AddWithValue("@c5", DropDownListcategory.SelectedItem.Value);
-            cmd.Parameters.AddWithValue("@c6", desc.Value);
-
-
-            // insert img in database
-            string path = "";
-            if (fuImg1.HasFile) // file upload center
+            try
             {
-                fuImg1.SaveAs(Server.MapPath("~/images/ProductImage/" + fuImg1.FileName));
-                path = "~/images/ProductImage/" + fuImg1.FileName;
+                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
+                con.Open();  //open db connection
+
+                string qry = "INSERT INTO tblProducts VALUES(@c0,@c1,@c2,@c3,@c4,@c5,@c6,@c7)"; //Sql Query
+                SqlCommand cmd = new SqlCommand(qry, con); //send query execution
+
+                cmd.Parameters.AddWithValue("@c0", TextBox1.Text);
+                cmd.Parameters.AddWithValue("@c1", Product.Value);
+                cmd.Parameters.AddWithValue("@c2", txtPrice.Value);
+                cmd.Parameters.AddWithValue("@c3", txtSellingPrice.Value);
+                cmd.Parameters.AddWithValue("@c4", DropDownListBrand.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("@c5", DropDownListcategory.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("@c6", desc.Value);
+
+
+                // insert img in database
+                string path = "";
+                if (fuImg1.HasFile) // file upload center
+                {
+                    fuImg1.SaveAs(Server.MapPath("~/images/ProductImage/" + fuImg1.FileName));
+                    path = "~/images/ProductImage/" + fuImg1.FileName;
+
+
+                }
+
+
+
+                cmd.Parameters.AddWithValue("@c7", path);
+
+
+
+                int i = cmd.ExecuteNonQuery(); //Execute sql query
+
+
+                if (i == 1)
+                {
+                    Response.Write("<script> alert('succesfull'); </script>");
+                    clear();
+
+                    SqlConnection con1 = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
+                    con1.Open();  //open db connection
+
+                    string qry1 = "Select max(PId) from tblProducts"; //Sql Query
+                    SqlCommand cmd1 = new SqlCommand(qry1, con1); //send query execution
+                    SqlDataReader dr1 = cmd1.ExecuteReader();
+                    dr1.Read();
+                    int PId = Convert.ToInt32(dr1[0]);
+                    PId++;
+                    TextBox1.ReadOnly = true;
+                    TextBox1.Text = PId.ToString();
+                    dr1.Close();
+                    con1.Close();
+
+                    ShowCategory();
+                    ShowBrand();
+                }
+                else
+                {
+                    Response.Write("<script> alert('Not succesfull'); </script>");
+                }
 
 
             }
-
-
-
-            cmd.Parameters.AddWithValue("@c7", path);
-            
-
-
-            int i = cmd.ExecuteNonQuery(); //Execute sql query
-
-
-            if (i == 1)
+            catch (SqlException ex)
             {
-                Response.Write("<script> alert('succesfull'); </script>");
-                clear();
-
-                SqlConnection con1 = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
-                con1.Open();  //open db connection
-
-                string qry1 = "Select max(PId) from tblProducts"; //Sql Query
-                SqlCommand cmd1 = new SqlCommand(qry1, con1); //send query execution
-                SqlDataReader dr1 = cmd1.ExecuteReader();
-                dr1.Read();
-                int PId = Convert.ToInt32(dr1[0]);
-                PId++;
-                TextBox1.ReadOnly = true;
-                TextBox1.Text = PId.ToString();
-                dr1.Close();
-                con1.Close();
-
-                ShowCategory();
-                ShowBrand();
+                Response.Write(ex);
             }
-            else
-            {
-                Response.Write("<script> alert('Not succesfull'); </script>");
-            }
-
-            
-
 
 
 
@@ -163,7 +169,7 @@ namespace VsProjectSky
 
         private void clear()
         {
-            
+
             Product.Value = string.Empty;
             txtPrice.Value = string.Empty;
             txtSellingPrice.Value = string.Empty;

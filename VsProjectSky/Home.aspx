@@ -51,8 +51,8 @@
                 <div class="  all-side-Shadow rounded col-md-10" style="background-color: #fff;">
 
                     <header class="section-heading">
-                        <a href="#" class="btn btn-primary float-right">See all &raquo</a>
-                        <h5 class="section-title">New Arrivals</h5>
+                        <a href="Shoes.aspx" class="btn btn-primary float-right">See all &raquo</a>
+                        <h5 class="section-title">Sports Shoes</h5>
                     </header>
                     <!-- sect-heading -->
 
@@ -63,13 +63,17 @@
                             <div href="#" class="card border-0 pt-3 card-product-grid">
                                 <a href="#" class="img-wrap">
                                     <span class="badge badge-danger">NEW </span>
-                                    <img src="/images/items/black shoes.jpg">
+                                    <asp:ImageButton ID="ImageButton1" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/sh2.jpeg" OnClick="ImageButton1_Click" />
                                 </a>
                                 <figcaption class="info-wrap">
-                                    <a href="#" class="title">Shoes</a>
+                                    <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2000</del>
+                                                    <span class="price text-success">&nbsp ₹1000</span>
+
+                                                </div>
 
 
-                                    <div class="price mt-1">1079.00</div>
+                                    <div class="title mt-1">Nike Sports Shoes</div>
                                     <!-- price-wrap.// -->
                                 </figcaption>
                             </div>
@@ -79,14 +83,18 @@
                             <div href="#" class="card border-0 pt-3 card-product-grid">
                                 <a href="#" class="img-wrap">
                                     <span class="badge badge-danger">NEW </span>
-                                    <img src="images/items/icepeak.jpeg">
+                                    <asp:ImageButton ID="ImageButton2" runat="server" Style="height: 150px; width:170px; outline:none" src="images/ProductImage/sh1.jpeg" OnClick="ImageButton2_Click"  />
+
                                 </a>
                                 <figcaption class="info-wrap">
-                                    <a href="#" class="title">Icepeak</a>
+                                    <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
+
+                                                </div>
 
 
-                                    <div class="price mt-1">2080.00</div>
-                                    <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Puma Sports Shoes</div>
                                 </figcaption>
                             </div>
                         </div>
@@ -96,14 +104,18 @@
                             <div href="#" class="card border-0 pt-3 card-product-grid">
                                 <a href="#" class="img-wrap">
                                     <span class="badge badge-danger">NEW </span>
-                                    <img src="images/items/myfootball.jpeg">
+                                    <asp:ImageButton ID="ImageButton3" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/sh3.jpeg" OnClick="ImageButton3_Click"/>
+
                                 </a>
                                 <figcaption class="info-wrap">
-                                    <a href="#" class="title">Football</a>
+                                    <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
+
+                                                </div>
 
 
-                                    <div class="price mt-1">2080.00</div>
-                                    <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Puma Sports Shoes</div>
                                 </figcaption>
                             </div>
                         </div>
@@ -113,14 +125,18 @@
                             <div href="#" class="card border-0 pt-3 card-product-grid">
                                 <a href="#" class="img-wrap">
                                     <span class="badge badge-danger">NEW </span>
-                                    <img src="images/items/GORE WEAR - C5 WOMEN CYCLING JERSEY.jpeg">
+                                    <asp:ImageButton ID="ImageButton4" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/sh4.jpeg" OnClick="ImageButton4_Click"/>
+
                                 </a>
                                 <figcaption class="info-wrap">
-                                    <a href="#" class="title">Sports jersey</a>
+                                    <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
+
+                                                </div>
 
 
-                                    <div class="price mt-1">5006.00</div>
-                                    <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Puma Sports Shoes</div>
                                 </figcaption>
                             </div>
                         </div>
@@ -129,13 +145,18 @@
                             <div href="#" class="card border-0 pt-3 card-product-grid">
                                 <a href="#" class="img-wrap">
                                     <span class="badge badge-danger">NEW </span>
-                                    <img src="images/items/Garmin Fenix 6 sw.jpeg">
+                                    <asp:ImageButton ID="ImageButton5" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/sh5.jpeg" OnClick="ImageButton5_Click"/>
+
                                 </a>
                                 <figcaption class="info-wrap">
-                                    <a href="#" class="title">Garmin Fenix</a>
+                                    <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
 
-                                    <div class="price mt-1">10070.00</div>
-                                    <!-- price-wrap.// -->
+                                                </div>
+
+
+                                    <div class="title mt-1 ">Puma Sports Shoes</div>
                                 </figcaption>
                             </div>
                         </div>
@@ -145,14 +166,18 @@
                             <div href="#" class="card border-0 pt-3 card-product-grid">
                                 <a href="#" class="img-wrap">
                                     <span class="badge badge-danger">NEW </span>
-                                    <img src="images/items/white_shoes-removebg.png">
+                                    <asp:ImageButton ID="ImageButton6" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/sh6.jpeg" OnClick="ImageButton6_Click"/>
+
                                 </a>
                                 <figcaption class="info-wrap">
-                                    <a href="#" class="title">product name</a>
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
+
+                                                </div>
 
 
-                                    <div class="price mt-1">10079.00</div>
-                                    <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Puma Sports Shoes</div>
                                 </figcaption>
                             </div>
                         </div>
@@ -227,7 +252,7 @@
 
                 <header class="section-heading pt-2 ">
                     <a href="Football.aspx" class="btn btn-primary float-right">See all</a>
-                    <h5 class="section-title">Popular products</h5>
+                    <h5 class="section-title">Football</h5>
                 </header>
                 <!-- sect-heading -->
 
@@ -237,14 +262,19 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="/images/items/black shoes.jpg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Shoes</a>
+                               <span class="badge badge-danger">40% off </span>
+                                    <asp:ImageButton ID="ImageButton7" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/f1.jpeg" OnClick="ImageButton7_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹1000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">1079.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Vector Football</div>
                             </figcaption>
                         </div>
                     </div>
@@ -252,30 +282,19 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="images/items/icepeak.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Icepeak</a>
+                                <span class="badge badge-danger">NEW </span>
+                                    <asp:ImageButton ID="ImageButton8" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/f2.jpeg" OnClick="ImageButton8_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">2080.00</div>
-                                <!-- price-wrap.// -->
-                            </figcaption>
-                        </div>
-                    </div>
-                    <!-- col.// -->
-
-                    <div class="col-md-2">
-                        <div href="#" class="card border-0 pt-3 card-product-grid">
-                            <a href="#" class="img-wrap">
-                                <img src="images/items/myfootball.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Football</a>
-
-
-                                <div class="price mt-1">2080.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Nivia Footall</div>
                             </figcaption>
                         </div>
                     </div>
@@ -284,28 +303,19 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="images/items/GORE WEAR - C5 WOMEN CYCLING JERSEY.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Sports jersey</a>
+                                <span class="badge badge-danger">NEW </span>
+                                    <asp:ImageButton ID="ImageButton9" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/f3.jpeg" OnClick="ImageButton9_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">5006.00</div>
-                                <!-- price-wrap.// -->
-                            </figcaption>
-                        </div>
-                    </div>
-                    <!-- col.// -->
-                    <div class="col-md-2">
-                        <div href="#" class="card border-0 pt-3 card-product-grid">
-                            <a href="#" class="img-wrap">
-                                <img src="images/items/Garmin Fenix 6 sw.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Garmin Fenix</a>
-
-                                <div class="price mt-1">10070.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Kids Footall</div>
                             </figcaption>
                         </div>
                     </div>
@@ -314,14 +324,60 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="images/items/white shoes.jpg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">product name</a>
+                                <span class="badge badge-danger">Discounted </span>
+                                    <asp:ImageButton ID="ImageButton10" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/f4.jpeg" OnClick="ImageButton10_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹4000</del>
+                                                    <span class="price text-success">&nbsp ₹3000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">10079.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Nivia Footall</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <!-- col.// -->
+                    <div class="col-md-2">
+                        <div href="#" class="card border-0 pt-3 card-product-grid">
+                            <a href="#" class="img-wrap">
+                                <span class="badge badge-danger">NEW </span>
+                                    <asp:ImageButton ID="ImageButton11" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/f5.jpeg" OnClick="ImageButton11_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹25000</del>
+                                                    <span class="price text-success">&nbsp ₹15000</span>
+
+                                                </div>
+
+
+                                    <div class="title mt-1 "> Footall</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <!-- col.// -->
+
+                    <div class="col-md-2">
+                        <div href="#" class="card border-0 pt-3 card-product-grid">
+                            <a href="#" class="img-wrap">
+                                <span class="badge badge-danger">NEW </span>
+                                    <asp:ImageButton ID="ImageButton12" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/f6.jpeg" OnClick="ImageButton12_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹2500</del>
+                                                    <span class="price text-success">&nbsp ₹1000</span>
+
+                                                </div>
+
+
+                                    <div class="title mt-1 ">Nivia Footall</div>
                             </figcaption>
                         </div>
                     </div>
@@ -345,8 +401,8 @@
             <div class="container  all-side-Shadow rounded" style="background-color: #fff;">
 
                 <header class="section-heading pt-2 ">
-                    <a href="Shoes.aspx" class="btn btn-primary float-right">See all</a>
-                    <h5 class="section-title">Popular products</h5>
+                    <a href="Tracker.aspx" class="btn btn-primary float-right">See all</a>
+                    <h5 class="section-title">Health Trackers</h5>
                 </header>
                 <!-- sect-heading -->
 
@@ -356,14 +412,19 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="/images/items/black shoes.jpg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Shoes</a>
+                                <span class="badge badge-danger">NEW </span>
+                                    <asp:ImageButton ID="ImageButton13" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/smw1.jpg" OnClick="ImageButton13_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹25000</del>
+                                                    <span class="price text-success">&nbsp ₹21000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">1079.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Apple Smart Watch</div>
                             </figcaption>
                         </div>
                     </div>
@@ -371,30 +432,19 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="images/items/icepeak.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Icepeak</a>
+                                <span class="badge badge-danger">Buy Now </span>
+                                    <asp:ImageButton ID="ImageButton14" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/smw2.jpg" OnClick="ImageButton14_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹30000</del>
+                                                    <span class="price text-success">&nbsp ₹25000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">2080.00</div>
-                                <!-- price-wrap.// -->
-                            </figcaption>
-                        </div>
-                    </div>
-                    <!-- col.// -->
-
-                    <div class="col-md-2">
-                        <div href="#" class="card border-0 pt-3 card-product-grid">
-                            <a href="#" class="img-wrap">
-                                <img src="images/items/myfootball.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Football</a>
-
-
-                                <div class="price mt-1">2080.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Fitbit Smart Watch</div>
                             </figcaption>
                         </div>
                     </div>
@@ -403,28 +453,19 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="images/items/GORE WEAR - C5 WOMEN CYCLING JERSEY.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Sports jersey</a>
+                                <span class="badge badge-danger">Hurry Up!</span>
+                                    <asp:ImageButton ID="ImageButton15" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/smw3.jpg" OnClick="ImageButton15_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹35000</del>
+                                                    <span class="price text-success">&nbsp ₹30000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">5006.00</div>
-                                <!-- price-wrap.// -->
-                            </figcaption>
-                        </div>
-                    </div>
-                    <!-- col.// -->
-                    <div class="col-md-2">
-                        <div href="#" class="card border-0 pt-3 card-product-grid">
-                            <a href="#" class="img-wrap">
-                                <img src="images/items/Garmin Fenix 6 sw.jpeg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">Garmin Fenix</a>
-
-                                <div class="price mt-1">10070.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Apple Smart Watch</div>
                             </figcaption>
                         </div>
                     </div>
@@ -433,14 +474,60 @@
                     <div class="col-md-2">
                         <div href="#" class="card border-0 pt-3 card-product-grid">
                             <a href="#" class="img-wrap">
-                                <img src="images/items/white shoes.jpg">
-                            </a>
-                            <figcaption class="info-wrap">
-                                <a href="#" class="title">product name</a>
+                                <span class="badge badge-danger">1pc left</span>
+                                    <asp:ImageButton ID="ImageButton16" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/smw4.jpg" OnClick="ImageButton16_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹4000</del>
+                                                    <span class="price text-success">&nbsp ₹2000</span>
+
+                                                </div>
 
 
-                                <div class="price mt-1">10079.00</div>
-                                <!-- price-wrap.// -->
+                                    <div class="title mt-1 ">Redmi Smart Band</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <!-- col.// -->
+                    <div class="col-md-2">
+                        <div href="#" class="card border-0 pt-3 card-product-grid">
+                            <a href="#" class="img-wrap">
+                                <span class="badge badge-danger">NEW </span>
+                                    <asp:ImageButton ID="ImageButton17" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/smw5.jpg" OnClick="ImageButton17_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹40000</del>
+                                                    <span class="price text-success">&nbsp ₹20000</span>
+
+                                                </div>
+
+
+                                    <div class="title mt-1 ">Samsung Smart Watch</div>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <!-- col.// -->
+
+                    <div class="col-md-2">
+                        <div href="#" class="card border-0 pt-3 card-product-grid">
+                            <a href="#" class="img-wrap">
+                                <span class="badge badge-danger">NEW </span>
+                                    <asp:ImageButton ID="ImageButton18" runat="server" Style="height: 150px; width:170px; outline:none" src="/images/ProductImage/smw6.jpg" OnClick="ImageButton18_Click"/>
+
+                                </a>
+                                <figcaption class="info-wrap">
+                                  <div class="price-wrap mt-2">
+                                                    <del class="price-old text-danger">₹25000</del>
+                                                    <span class="price text-success">&nbsp ₹21000</span>
+
+                                                </div>
+
+
+                                    <div class="title mt-1 ">Apple Smart Watch</div>
                             </figcaption>
                         </div>
                     </div>

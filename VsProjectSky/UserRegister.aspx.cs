@@ -20,7 +20,8 @@ namespace VsProjectSky
 
         protected void Register_Click(object sender, EventArgs e)
         {
-           
+           try { 
+
 
             if (isFormvalid())
             {
@@ -73,6 +74,11 @@ namespace VsProjectSky
                 msgLabel.Text = "Registration Failed";
                 msgLabel.ForeColor = System.Drawing.Color.Red;
             }
+           }
+           catch (SqlException ex)
+           {
+                Response.Write(ex);
+           }
 
         }
 

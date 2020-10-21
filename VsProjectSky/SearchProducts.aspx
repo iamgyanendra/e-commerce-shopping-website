@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
         <div>
-            <div class="col-lg-5 col-12 col-sm-12 py-5 m-auto vh-100">
+            <div class="col-lg-5 col-12 col-sm-12 py-5 m-auto">
                 <form action="#" class="search">
                     <div class="input-group w-100">
 
@@ -27,16 +27,20 @@
         <div>
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         </div>
-        <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+        <div class="mb-5 pb-5">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="PId" BorderStyle="None" GridLines="Horizontal" HorizontalAlign="Center" CellPadding="10" CellSpacing="10" BorderColor="#CCCCCC" Font-Bold="True" Font-Italic="True" Font-Size="Smaller">
                 <Columns>
                     <asp:BoundField DataField="PId" HeaderText="Product ID" />
                     <asp:BoundField DataField="PName" HeaderText="Product Name" />
                     <asp:BoundField DataField="PSelPrice" HeaderText="Price" />
                     <asp:BoundField DataField="PDescription" HeaderText="Description" />
                     <asp:ImageField DataImageUrlField="PImageName" HeaderText="Image" ItemStyle-Width="50px" ControlStyle-Width="100" ControlStyle-Height="100">
+<ControlStyle Height="100px" Width="100px"></ControlStyle>
+
+<ItemStyle Width="50px"></ItemStyle>
                     </asp:ImageField>
                 </Columns>
+                <HeaderStyle BorderColor="White" ForeColor="White" />
             </asp:GridView>
         </div>
     </form>

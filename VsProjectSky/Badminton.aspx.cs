@@ -16,15 +16,15 @@ namespace VsProjectSky
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Session["prid"] = 5019;
-            Response.Redirect("ProductDetails.aspx");
+            Session["prid"] = 5019;// product id
+            Response.Redirect("ProductDetails.aspx"); // product details page
         }
 
         protected void AddCart1_Click(object sender, EventArgs e)
         {
             
 
-            ShoppingCart sc = new ShoppingCart();
+            ShoppingCart sc = new ShoppingCart(); // object of class ShoppingCart
             sc.addToCart(5019, "Badminton", Convert.ToInt32(Session["cid"]), 200, Convert.ToInt32(TextBox1.Text), System.DateTime.Now.ToShortDateString());
 
             AddCart1.Text = "Added";

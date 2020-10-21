@@ -63,14 +63,14 @@ namespace VsProjectSky
                 GridView1.DataBind();
 
             }
-            else 
+            else
             {
                 GridView1.Visible = false;
                 Label1.Visible = true;
                 Label1.Text = "Your Cart Is Empty";
-            
+
             }
-                dr.Close();
+            dr.Close();
 
             string qry1 = "select sum(Price*Quty) from TempCart where CustID=@t3";
             SqlCommand cmd1 = new SqlCommand(qry1, con); //send query execution
@@ -79,15 +79,15 @@ namespace VsProjectSky
             SqlDataReader dr1 = cmd1.ExecuteReader(); //Execute sql query
 
             dr1.Read();
-                Label2.Text = dr1[0].ToString();
+            Label2.Text = dr1[0].ToString();
 
-                dr1.Close();
-            
+            dr1.Close();
+
             con.Close();
         }
 
-           
-       
+
+
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -97,7 +97,7 @@ namespace VsProjectSky
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            
+
 
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString); //Create connection b/w .net and database
             con.Open();  //open db connection
@@ -105,17 +105,17 @@ namespace VsProjectSky
             string qry = "delete from TempCart where ProdId=@t1"; //Sql Query
 
             SqlCommand cmd = new SqlCommand(qry, con); //send query execution
-            cmd.Parameters.AddWithValue("@t1",cid);
+            cmd.Parameters.AddWithValue("@t1", cid);
             cmd.ExecuteNonQuery();
             con.Close();
             GridView1.EditIndex = -1;
             connect();
         }
 
-       
 
-       
 
-        
+
+
+
     }
 }

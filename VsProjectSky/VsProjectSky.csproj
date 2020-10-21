@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="AddProduct.aspx" />
     <Content Include="AdminPanel.aspx" />
     <Content Include="AdminLogin.aspx" />
@@ -95,6 +96,12 @@
     <Content Include="css\ui7839.css" />
     <Content Include="css\uic619.css" />
     <Content Include="css\userPage.css" />
+    <Content Include="images\misc\about-us-banner.jpg" />
+    <Content Include="images\misc\About_us_pic-removebg-preview %281%29.png" />
+    <Content Include="images\misc\About_us_pic-removebg-preview.png" />
+    <Content Include="images\misc\me-01-removebg-preview.png" />
+    <Content Include="images\misc\me-02-removebg-preview %281%29.png" />
+    <Content Include="images\misc\me-02-removebg-preview.png" />
     <Content Include="M2test.aspx" />
     <Content Include="SellerLogin.aspx" />
     <Content Include="SellerRegister.aspx" />
@@ -232,6 +239,13 @@
     <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
